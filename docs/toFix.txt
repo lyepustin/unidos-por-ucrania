@@ -1,0 +1,8 @@
+TODO:
+    main-menu always on TOP -> <div class="header-bottom"> error ✅
+    click on photo -> better view ✅
+    icon to change lenguage
+    zmdi zmdi-menu menu-open doesnt work (header-bottom)
+    header centrate text (image to big)
+    header top enable? 
+    donate button

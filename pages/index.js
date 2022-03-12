@@ -7,17 +7,19 @@ import Hero from "pages/sections/hero";
 import Service from "pages/sections/service";
 import Galery from "pages/sections/galery";
 import AboutArea from "pages/sections/about-area";
+import ContactArea from "pages/sections/contact-area";
 
 export default function Home() {
   return (
     <div>
-      <HeaderTop />
+      {/* <HeaderTop /> */}
       <HeaderBottom />
       <div className="wrapper fix">
         <Hero />
         <Service />
         <Galery />
         <AboutArea />
+        <ContactArea />
       </div>
     </div>
   );

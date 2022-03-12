@@ -1,6 +1,8 @@
 import { useTranslation } from "next-i18next";
 
 export default () => {
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
   const { t } = useTranslation();
   return (
     <div id="service-area" className="service-area section pb-65 pt-110">
@@ -8,7 +10,6 @@ export default () => {
         <div className="row">
           <div className="section-title text-start col-12 mb-70">
             <h4>{t("interesting facts")}</h4>
-            {/* <h2>Our Services for you</h2> */}
           </div>
         </div>
 
@@ -24,8 +25,10 @@ export default () => {
             ></span>
             <h4>{t("pick-up")}</h4>
             <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
+              Existen un total de <b>A</b> puntos de recogida de material humanitario.
+            </p>
+            <p>
+              Existen un total de <b>B</b> cuidades con puntos de recogida de material humanitario.
             </p>
           </div>
 
@@ -36,50 +39,68 @@ export default () => {
             ></span>
             <h4>{t("logistics centers")}</h4>
             <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
+              Disponemos de <b>C</b> centros de logística, donde se realizan las operaciones de almacenaje,
+              procesamiento y empaquetado de ayuda material humanitario.
             </p>
           </div>
 
-          <div id="package" className="single-service col-lg-4 col-md-6 col-12 mb-45">
+          <div id="supplies" className="single-service col-lg-4 col-md-6 col-12 mb-45">
             <span
               className="image"
               style={{ backgroundImage: "url('images/sections/package.png')", height: "58px", width: "57px" }}
             ></span>
             <h4>{t("humanitarian supplies")}</h4>
+            <p>A día de {date} se han:</p>
+            <dl>
+              <dt>Recibido y procesado</dt>
+              <dd>
+                - Más de 2000 <b>D</b> cajas de material humanitario
+              </dd>
+              <dt>Enviado a Ucrania</dt>
+              <dd>
+                - 2 <b>E</b> tráiler completos.{" "}
+              </dd>
+              <dd>
+                - 66 <b>F</b> palets de material humanitario (33 por tráiler){" "}
+              </dd>
+              <dd>
+                - 1518 <b>H</b> cajas de material humanitario (23 por palet){" "}
+              </dd>
+            </dl>
+          </div>
+
+          <div id="association" className="single-service col-lg-4 col-md-6 col-12 mb-45">
+            <span
+              className="image"
+              style={{ backgroundImage: "url('images/sections/association.png')", height: "65px", width: "57px" }}
+            ></span>
+            <h4>{t("associations")}</h4>
             <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
+              Pretendemos dar a conocer el trabajo y colaboración de las <b>I</b> asociaciones en la ayuda a Ucrania por
+              la invasión rusa.
             </p>
           </div>
 
           <div id="partnerships" className="single-service col-lg-4 col-md-6 col-12 mb-45">
             <span
               className="image"
-              style={{ backgroundImage: "url('images/sections/partnerships.png')", height: "65px", width: "57px" }}
+              style={{ backgroundImage: "url('images/sections/partnerships.png')", height: "50px", width: "56px" }}
             ></span>
-            <h4>Our Campaign</h4>
+            <h4>{t("partnership network")}</h4>
             <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
+              Agradecemos el apoyo de todos los <b>J</b> colaboradores y empresas que hacen posible nuestro trabajo.
             </p>
           </div>
 
-          <div id="partnerships" className="single-service col-lg-4 col-md-6 col-12 mb-45">
-            <span className="image" style={{ backgroundImage: "url('img/service/partners.png')" }}></span>
-            <h4>Become a Volunteer</h4>
+          <div id="volunteers" className="single-service col-lg-4 col-md-6 col-12 mb-45">
+            <span
+              className="image"
+              style={{ backgroundImage: "url('images/sections/volunteers.png')", height: "57px", width: "57px" }}
+            ></span>
+            <h4>{t("volunteers")}</h4>
             <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
-            </p>
-          </div>
-
-          <div className="single-service col-lg-4 col-md-6 col-12 mb-45">
-            <span className="image" style={{ backgroundImage: "url('img/service/3.png')" }}></span>
-            <h4>Donation</h4>
-            <p>
-              There are many variations of pges of Lorem Ipsu mavailable,but thhave suffered alteration insome form, by
-              injected humoura
+              Gracias a la colaboración de nuestros <b>K</b> voluntarios, podemos ayudar a Ucrania a resistir la
+              invasión rusa.
             </p>
           </div>
         </div>

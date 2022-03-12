@@ -1,3 +1,0 @@
-dudas:
-    cómo seperar cada sección por ficheros?
-    cómo usar el translator

@@ -13,8 +13,15 @@ export default () => {
         <div className="row justify-content-between justify-content-md-center justify-content-lg-between position-relative">
           <div className="col-md-auto col-12">
             <div className="navbar-header d-flex justify-content-between">
-              <a href="index.html" className="logo navbar-brand">
-                <img src="images/logo.png" alt="logo" />
+              <a href="/" className="logo navbar-brand">
+                <img
+                  src="images/logo.png"
+                  alt="logo"
+                  style={{
+                    height: "100px",
+                    width: "100px"
+                  }}
+                />
               </a>
               <button
                 className="navbar-toggle collapsed d-block d-md-none"
