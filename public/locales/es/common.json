@@ -6,7 +6,7 @@
   "interesting facts": "Hechos",
   "pick-up": "Puntos de recogida",
   "logistics centers": "Centros logísticos",
-  "humanitarian supplies": "Suministros humanitarios",
+  "humanitarian supplies": "Suministros humanitarios {{value}}",
   "associations": "Asociaciones",
   "partnership network": "Red de empresas",
   "volunteers": "Voluntarios"

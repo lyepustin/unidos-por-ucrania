@@ -1,5 +1,40 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import React from "react";
 import { i18n } from "next-i18next";
-export default () => {
+import Link from "next/link";
+import Image from "next/image";
+import Select from "react-select";
+import Flags from "country-flag-icons/react/3x2";
+
+const options = [
+  { value: "es", label: "Español", country: "ES" },
+  { value: "en", label: "English", country: "GB" },
+];
+
+const CustomOption = ({ innerRef, innerProps, data }) => {
+  const Flag = Flags[data.country];
+  return (
+    <div
+      ref={innerRef}
+      {...innerProps}
+      className="min-w-150px px-2 py-1 flex items-center justify-start gap-2 hover:bg-gray-100 cursor-pointer"
+    >
+      <Flag className="h-[15px] w-[15px]" />
+      {data.label}
+    </div>
+  );
+};
+
+const headerBottom = (props) => {
+  const [selectedOption, setSelectedOption] = React.useState(
+    options.find((opt) => opt.value == i18n.language)
+  );
+
+  const handleSelectLanguage = (props) => {
+    setSelectedOption(props);
+    i18n.changeLanguage(props.value);
+  };
+
   return (
     <div
       className="header-bottom"
@@ -7,23 +42,21 @@ export default () => {
         position: "sticky",
         top: 0,
         zIndex: 9999,
-        backgroundColor: "white"
+        backgroundColor: "white",
       }}
     >
       <div className="container">
         <div className="row justify-content-between justify-content-md-center justify-content-lg-between position-relative">
           <div className="col-md-auto col-12">
             <div className="navbar-header d-flex justify-content-between">
-              <a href="/" className="logo navbar-brand">
-                <img
-                  src="images/logo.png"
+              <Link href="/" className="logo navbar-brand" passHref>
+                <Image
+                  src="/images/logo.png"
                   alt="logo"
-                  style={{
-                    height: "100px",
-                    width: "100px"
-                  }}
+                  height="100px"
+                  width="100px"
                 />
-              </a>
+              </Link>
               <button
                 className="navbar-toggle collapsed d-block d-md-none"
                 data-bs-toggle="collapse"
@@ -39,6 +72,21 @@ export default () => {
             <div className="main-menu collapse" id="main-menu">
               <nav>
                 <ul>
+                  <li className="active">
+                    <a className="relative top-[-5px]">
+                      <Select
+                        onChange={handleSelectLanguage}
+                        options={options}
+                        value={selectedOption}
+                        components={{
+                          Option: CustomOption,
+                        }}
+                        styles={{
+                          container: (base) => ({ ...base, width: 150 }),
+                        }}
+                      />
+                    </a>
+                  </li>
                   <li className="active">
                     <a href="#hero-area">home</a>
                   </li>
@@ -64,17 +112,10 @@ export default () => {
               </nav>
             </div>
           </div>
-
-          <div className="col-auto d-none d-lg-block">
-            <div className="header-donation">
-              <button onClick={() => i18n.changeLanguage("en")}>CLICK</button>
-              <a className="btn" data-scroll="" href="#donation-area">
-                donate
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   );
 };
+
+export default headerBottom;
