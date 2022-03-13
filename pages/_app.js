@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Political</title>
+        <title>Unidos por Ucrania</title>
         <meta charSet="utf-8" />
         <meta content="ie=edge" />
         <meta name="description" content="" />
