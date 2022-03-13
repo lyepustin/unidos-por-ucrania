@@ -5,10 +5,10 @@ export default () => {
   const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
   const { t } = useTranslation();
   return (
-    <div id="service-area" className="service-area section pb-65 pt-110">
+    <div id="service-area" className="service-area section pb-40 pt-40">
       <div className="container">
         <div className="row">
-          <div className="section-title text-start col-12 mb-70">
+          <div className="section-title text-start col-12 mb-20">
             <h4>{t("interesting facts")}</h4>
           </div>
         </div>

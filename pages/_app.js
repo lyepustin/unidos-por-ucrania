@@ -20,9 +20,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Script src="js/vendor/modernizr-2.8.3.min.js" defer={true} />
-      {/* <Script src="js/vendor/jquery-1.12.4.min.js" defer={true} />
+      {/* <Script src="js/vendor/jquery-1.12.4.min.js" defer={true} /> */}
       <Script src="js/bootstrap.min.js" defer={true} />
-      <Script src="js/plugins.js" defer={true} /> */}
+      {/* <Script src="js/plugins.js" defer={true} />  */}
       <Component {...pageProps} />
     </>
   );

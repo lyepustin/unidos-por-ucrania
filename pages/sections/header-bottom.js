@@ -1,3 +1,4 @@
+import { i18n } from "next-i18next";
 export default () => {
   return (
     <div
@@ -66,6 +67,7 @@ export default () => {
 
           <div className="col-auto d-none d-lg-block">
             <div className="header-donation">
+              <button onClick={() => i18n.changeLanguage("en")}>CLICK</button>
               <a className="btn" data-scroll="" href="#donation-area">
                 donate
               </a>

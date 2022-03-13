@@ -1131,11 +1131,11 @@ textarea:-ms-input-placeholder {
 
 /*-- Navbar Header --*/
 .navbar-header {
-  padding: 26px 0;
+  padding: 10px 0;
 }
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    padding: 23px 0;
+    padding: 10px 0;
   }
 }
 .navbar-header .logo {
