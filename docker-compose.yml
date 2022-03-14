@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  nextjs:
+    image: nextjs-ukrain
+    container_name: nextjs-ukrain
+    restart: always
+    build: .
+    ports:
+      - 3000:3000
+    # network_mode: host
+  proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: proxy-manager
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+    volumes:
+      - ./docker/data:/data
+      - ./docker/letsencrypt:/etc/letsencrypt
