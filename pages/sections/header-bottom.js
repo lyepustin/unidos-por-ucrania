@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import { i18n } from "next-i18next";
+import { i18n, useTranslation } from "next-i18next";
 import Link from "next/link";
 import Image from "next/image";
 import Select from "react-select";
@@ -8,7 +8,7 @@ import Flags from "country-flag-icons/react/3x2";
 
 const options = [
   { value: "es", label: "Español", country: "ES" },
-  { value: "en", label: "English", country: "GB" },
+  { value: "en", label: "English", country: "GB" }
 ];
 
 const CustomOption = ({ innerRef, innerProps, data }) => {
@@ -26,9 +26,8 @@ const CustomOption = ({ innerRef, innerProps, data }) => {
 };
 
 const headerBottom = (props) => {
-  const [selectedOption, setSelectedOption] = React.useState(
-    options.find((opt) => opt.value == i18n.language)
-  );
+  const { t } = useTranslation();
+  const [selectedOption, setSelectedOption] = React.useState(options.find((opt) => opt.value == i18n.language));
 
   const handleSelectLanguage = (props) => {
     setSelectedOption(props);
@@ -42,7 +41,7 @@ const headerBottom = (props) => {
         position: "sticky",
         top: 0,
         zIndex: 9999,
-        backgroundColor: "white",
+        backgroundColor: "white"
       }}
     >
       <div className="container">
@@ -50,12 +49,7 @@ const headerBottom = (props) => {
           <div className="col-md-auto col-12">
             <div className="navbar-header d-flex justify-content-between">
               <Link href="/" className="logo navbar-brand" passHref>
-                <Image
-                  src="/images/logo.png"
-                  alt="logo"
-                  height="100px"
-                  width="100px"
-                />
+                <Image src="/images/logo.png" alt="logo" height="100px" width="100px" />
               </Link>
               <button
                 className="navbar-toggle collapsed d-block d-md-none"
@@ -79,34 +73,34 @@ const headerBottom = (props) => {
                         options={options}
                         value={selectedOption}
                         components={{
-                          Option: CustomOption,
+                          Option: CustomOption
                         }}
                         styles={{
-                          container: (base) => ({ ...base, width: 150 }),
+                          container: (base) => ({ ...base, width: 150 })
                         }}
                       />
                     </a>
                   </li>
                   <li className="active">
-                    <a href="#hero-area">home</a>
+                    <a href="#hero-area">{t("header_home")}</a>
                   </li>
                   <li>
-                    <a href="#about-area">about</a>
+                    <a href="#about-area">{t("header_about")}</a>
                   </li>
                   <li>
-                    <a href="#service-area">service</a>
+                    <a href="#service-area">{t("header_service")}</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#event-area">event</a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="#gallery-area">gallery</a>
+                    <a href="#gallery-area">{t("header_gallery")}</a>
                   </li>
+                  {/* <li>
+                    <a href="#blog-area">{t("header_about")}</a>
+                  </li> */}
                   <li>
-                    <a href="#blog-area">blog</a>
-                  </li>
-                  <li>
-                    <a href="#contact-area">contact us</a>
+                    <a href="#contact-area">{t("header_contact us")}</a>
                   </li>
                 </ul>
               </nav>
