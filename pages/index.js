@@ -17,9 +17,10 @@ export default function Home() {
       <div className="wrapper fix">
         <Hero />
         <Service />
-        <Galery />
         <AboutArea />
-        <ContactArea />
+        <Galery />
+
+        {/* <ContactArea /> */}
       </div>
     </div>
   );

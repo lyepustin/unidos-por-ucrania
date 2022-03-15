@@ -1374,6 +1374,26 @@ textarea:-ms-input-placeholder {
 }
 
 /*Hero Slide Item*/
+.assoc-item {
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  padding-top: 50px;
+  position: relative;
+}
+.assoc-item::before {
+  background-color: #000000;
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  opacity: 0.01;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+/*Hero Slide Item*/
 .hs-item {
   background-position: center center;
   background-size: cover;
@@ -2598,6 +2618,7 @@ blockquote {
 /*  13.  Contact Area
 /*----------------------------------------*/
 /*Single Contact Info*/
+
 .sin-contact i {
   border: 1px solid #ddd;
   border-radius: 50%;
@@ -2612,12 +2633,6 @@ blockquote {
 .sin-contact p {
   line-height: 22px;
   margin: 0;
-}
-
-/*Contact Map*/
-#contact-map {
-  height: 335px;
-  width: 100%;
 }
 
 /*Contact Form*/
