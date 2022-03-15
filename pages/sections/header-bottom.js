@@ -8,7 +8,8 @@ import Flags from "country-flag-icons/react/3x2";
 
 const options = [
   { value: "es", label: "Español", country: "ES" },
-  { value: "en", label: "English", country: "GB" }
+  { value: "en", label: "English", country: "GB" },
+  { value: "ru", label: "Russian", country: "RU" }
 ];
 
 const CustomOption = ({ innerRef, innerProps, data }) => {
@@ -81,9 +82,9 @@ const headerBottom = (props) => {
                       />
                     </a>
                   </li>
-                  <li className="active">
+                  {/* <li className="active">
                     <a href="#hero-area">{t("header_home")}</a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#about-area">{t("header_about")}</a>
                   </li>

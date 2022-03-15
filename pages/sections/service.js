@@ -1,16 +1,9 @@
 import { useTranslation } from "next-i18next";
+import Database from "data/bbdd";
 
 export default () => {
-  const info = {
-    "pick-up points": 3,
-    "pick-up city": 3,
-    "logistics centres": 2,
-    "boxes recived": 2000,
-    "trucks sent": 2,
-    "palets sent": 66,
-    "boxes sent": 1518
-  };
   const current = new Date();
+  const ActualDatabase = Database();
   const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
 
   const { t } = useTranslation();
@@ -34,7 +27,9 @@ export default () => {
               }}
             ></span>
             <h4>{t("pick-up")}</h4>
-            <p>{t("pick-up info", { points: info["pick-up points"], city: info["pick-up city"] })}</p>
+            <p>
+              {t("pick-up info", { points: ActualDatabase["pick-up points"], city: ActualDatabase["pick-up city"] })}
+            </p>
           </div>
 
           <div id="logistic" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -47,7 +42,7 @@ export default () => {
               }}
             ></span>
             <h4>{t("logistics centers")}</h4>
-            <p>{t("logistics centers info", { centres: info["logistics centres"] })}</p>
+            <p>{t("logistics centers info", { centres: ActualDatabase["logistics centres"] })}</p>
           </div>
 
           <div id="supplies" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -62,13 +57,12 @@ export default () => {
             <h4>{t("humanitarian supplies")}</h4>
             <p>{t("humanitarian supplies date")}</p>
             <dl>
-              {t("")}
               <dt>{t("humanitarian supplies recive")}</dt>
-              <dd>- {t("humanitarian supplies recive data", { boxes: info["boxes recived"] })}</dd>
+              <dd>- {t("humanitarian supplies recive data", { boxes: ActualDatabase["boxes recived"] })}</dd>
               <dt>{t("humanitarian supplies sent")}</dt>
-              <dd>- {t("humanitarian supplies sent data trailer", { trailers: info["trucks sent"] })}</dd>
-              <dd>- {t("humanitarian supplies sent data palets", { palets: info["palets sent"] })}</dd>
-              <dd>- {t("humanitarian supplies sent data boxs", { boxes: info["boxes sent"] })}</dd>
+              <dd>- {t("humanitarian supplies sent data trailer", { trailers: ActualDatabase["trucks sent"] })}</dd>
+              <dd>- {t("humanitarian supplies sent data palets", { palets: ActualDatabase["palets sent"] })}</dd>
+              <dd>- {t("humanitarian supplies sent data boxs", { boxes: ActualDatabase["boxes sent"] })}</dd>
             </dl>
           </div>
 
@@ -82,10 +76,7 @@ export default () => {
               }}
             ></span>
             <h4>{t("associations")}</h4>
-            <p>
-              Pretendemos dar a conocer el trabajo y colaboración de las <b>I</b> asociaciones en la ayuda a Ucrania por
-              la invasión rusa.
-            </p>
+            <p>{t("associations text", { boxes: ActualDatabase["number of associations"] })}</p>
           </div>
 
           <div id="partnerships" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -97,10 +88,8 @@ export default () => {
                 width: "56px"
               }}
             ></span>
-            <h4>{t("partnership network")}</h4>
-            <p>
-              Agradecemos el apoyo de todos los <b>J</b> colaboradores y empresas que hacen posible nuestro trabajo.
-            </p>
+            <h4>{t("partners")}</h4>
+            <p>{t("partners text", { partners: ActualDatabase["number of partners"] })}</p>
           </div>
 
           <div id="volunteers" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -113,10 +102,7 @@ export default () => {
               }}
             ></span>
             <h4>{t("volunteers")}</h4>
-            <p>
-              Gracias a la colaboración de nuestros <b>K</b> voluntarios, podemos ayudar a Ucrania a resistir la
-              invasión rusa.
-            </p>
+            <p>{t("volunteers text", { volunteers: ActualDatabase["number of volunteers"] })}</p>
           </div>
         </div>
       </div>

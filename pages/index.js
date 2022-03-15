@@ -16,9 +16,9 @@ export default function Home() {
       <HeaderBottom />
       <div className="wrapper fix">
         <Hero />
-        <AboutArea />
         <Service />
         <Galery />
+        <AboutArea />
         <ContactArea />
       </div>
     </div>
