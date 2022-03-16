@@ -1,11 +1,14 @@
 import { useTranslation } from "next-i18next";
 
-export default () => {
+const Hero = () => {
   const { t } = useTranslation();
   return (
     <div id="hero-area" className="hero-slider">
       {/* <!--Hero Slide Item Start--> */}
-      <div className="hs-item" style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}>
+      <div
+        className="hs-item"
+        style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}
+      >
         <div className="container">
           <div className="row">
             {/* <!--Hero Slide Content--> */}
@@ -15,10 +18,11 @@ export default () => {
                   <div className="hs-content">
                     {/* <h2>{t("human effort")}</h2> */}
                     <h1>{t("how we are")}</h1>
-                    {/* <p>{t("our mission")}</p> */}
-                    {/* <a href="#about-area" data-scroll className="btn btn-xlg">
-                        {t("join with us")} <i className="zmdi zmdi-long-arrow-right"></i>
-                      </a> */}
+                    <p>{t("our mission")}</p>
+                    <a href="#about-area" data-scroll className="btn btn-xlg">
+                      {t("join with us")}{" "}
+                      <i className="zmdi zmdi-long-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -59,3 +63,5 @@ export default () => {
     </div>
   );
 };
+
+export default Hero;

@@ -1558,11 +1558,7 @@ textarea:-ms-input-placeholder {
     display: none;
   }
 }
-@media only screen and (max-width: 479px) {
-  .hs-item .hs-content p {
-    display: none;
-  }
-}
+
 .hs-item .hs-content a {
   background-color: transparent;
   border: 1px solid #cccccc;
@@ -3453,7 +3449,6 @@ blockquote {
 .wd_story_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/timeline.jpg);
   /* background-image: url(../images/content/story_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
@@ -3464,8 +3459,8 @@ blockquote {
 .wd_overlay {
   content: "";
   position: absolute;
-  background-image: url(../images/content/dot_bg.png);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-image: url(../images/content/dot_bg.png); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
   top: 0;
   left: 0;
   bottom: 0;
@@ -3482,7 +3477,7 @@ blockquote {
 }
 .wd_story_line {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #666;
   width: 2px;
   top: 0px;
   bottom: 0px;
@@ -3494,10 +3489,8 @@ blockquote {
 .wd_story_covers_box_left {
   float: left;
   width: 510px;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-border-radius: 50px 0px 50px 50px;
-  -moz-border-radius: 50px 0px 50px 50px;
-  border-radius: 50px 0px 50px 50px;
+  background-color: #666;
+  border-radius: 10px 0px 10px 10px;
   position: relative;
   margin: 50px 0px 150px 0px;
 }
@@ -3509,23 +3502,23 @@ blockquote {
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
-  border-left: 35px solid rgba(255, 255, 255, 0.1);
+  border-left: 35px solid #666;
   border-bottom: 25px solid transparent;
 }
 .wd_story_covers_box_right .wd_story_dot {
-  left: -75px;
+  left: -90px;
   right: auto;
 }
 .wd_story_dot {
   position: absolute;
-  right: -75px;
-  top: 30px;
+  right: -90px;
+  top: -15px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #666;
   text-align: center;
 }
 .wd_story_dot span {
@@ -3544,7 +3537,7 @@ blockquote {
 .wd_story_covers_box_right {
   float: right;
   width: 510px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #666;
   -webkit-border-radius: 0px 50px 50px 50px;
   -moz-border-radius: 0px 50px 50px 50px;
   border-radius: 0px 50px 50px 50px;
@@ -3559,7 +3552,7 @@ blockquote {
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
-  border-right: 35px solid rgba(255, 255, 255, 0.1);
+  border-right: 35px solid #666;
   border-bottom: 25px solid transparent;
 }
 .wd_story_covers_box_right .wd_story_covers_box_img {
@@ -3615,7 +3608,7 @@ blockquote {
 .wd_event_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/event_bg.jpg);
+  /* background-image: url(../images/content/event_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -3674,7 +3667,7 @@ blockquote {
 .wd_guest_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/guest_bg.jpg);
+  /* background-image: url(../images/content/guest_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -3684,8 +3677,8 @@ blockquote {
 .wd_overlay {
   content: "";
   position: absolute;
-  background-image: url(../images/content/dot_bg.png);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-image: url(../images/content/dot_bg.png); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
   top: 0;
   left: 0;
   bottom: 0;
@@ -3837,7 +3830,7 @@ blockquote {
 .wd_family_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/family_bg.jpg);
+  /* background-image: url(../images/content/family_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -4290,7 +4283,7 @@ blockquote {
 .wd_blog_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/blog_bg.jpg);
+  /* background-image: url(../images/content/blog_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -4398,7 +4391,7 @@ blockquote {
 .wd_contact_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/contact_bg.jpg);
+  /* background-image: url(../images/content/contact_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -4408,8 +4401,8 @@ blockquote {
 .wd_overlay {
   content: "";
   position: absolute;
-  background-image: url(../images/content/dot_bg.png);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-image: url(../images/content/dot_bg.png); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
   top: 0;
   left: 0;
   bottom: 0;
@@ -4673,9 +4666,7 @@ blockquote {
   }
   .wd_story_covers_box_left {
     width: 100%;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    border-radius: 10px 0px 10px 10px;
     margin: 50px 0px 0px 0px;
   }
   .wd_story_covers_box_right:after {

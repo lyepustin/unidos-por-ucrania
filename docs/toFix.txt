@@ -8,9 +8,9 @@ TODO:
 
 
     To check today with Arti:
-        add icon flag to value={selectedOption} in header-bottom.js
+        add icon flag to value={selectedOption} in header-bottom.js ✅ 16/03
 
-        Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef() 
+        Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()  ✅ 16/03
             header-bottom
 
         Best practises for show photos?
