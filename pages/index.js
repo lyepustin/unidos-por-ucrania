@@ -8,6 +8,7 @@ import Service from "pages/sections/service";
 import Galery from "pages/sections/galery";
 import AboutArea from "pages/sections/about-area";
 import ContactArea from "pages/sections/contact-area";
+import Timeline from "pages/sections/timeline";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="wrapper fix">
         <Hero />
         <Service />
+        <Timeline />
         <AboutArea />
         <Galery />
 

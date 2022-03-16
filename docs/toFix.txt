@@ -5,13 +5,24 @@ TODO:
     icon to change lenguage - donate button change to lenguage selector ✅ 13/03
     header centrate text (image to big) ✅ 13/03
     header always top? ✅ 14/03
-    how to hide info like hero.js <p> line 18 on mobile version?
-    about-area.js reduce padding top on mobile version 
-    hero.js (more than 1 view) - check template
-    href from menu to Data doesnt work pretty good
-    add icon flag to value={selectedOption} in header-bottom.js
-    Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef() 
-        header-bottom
-    Best practises for show photos?
-        if there are a lot of photos -> slow loading times
-        maybe another section?
+
+
+    To check today with Arti:
+        add icon flag to value={selectedOption} in header-bottom.js
+
+        Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef() 
+            header-bottom
+
+        Best practises for show photos?
+            if there are a lot of photos -> slow loading times
+            maybe another section?
+
+    
+    More latter:
+        how to hide info like hero.js <p> line 18 on mobile version?
+        about-area.js reduce padding top on mobile version 
+        hero.js (more than 1 view) - check template
+        href from menu to Data doesnt work pretty good
+    
+
+
