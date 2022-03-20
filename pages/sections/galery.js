@@ -11,14 +11,9 @@ export default () => {
           </div>
         </div>
         <div className="px-5 grid sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-5 grid-flow-row gap-10">
-          <div>
-            <Zoom>
-              <img src="https://placekitten.com/200/300" alt="" width="500" />
-            </Zoom>
-            <p>Descripción</p>
-            <p>Lugar</p>
-            <p>Fecha</p>
-          </div>
+          <Zoom>
+            <img src="https://placekitten.com/200/300" alt="" width="500" />
+          </Zoom>
           <Zoom>
             <img src="https://placekitten.com/200/300" alt="" width="500" />
           </Zoom>

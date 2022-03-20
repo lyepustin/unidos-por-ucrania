@@ -10,7 +10,7 @@ import Flags from "country-flag-icons/react/3x2";
 const options = [
   { value: "es", label: "Español", country: "ES" },
   { value: "en", label: "English", country: "GB" },
-  { value: "ru", label: "Russian", country: "RU" },
+  { value: "ru", label: "Russian", country: "RU" }
 ];
 
 const CustomOption = ({ innerRef, innerProps, data }) => {
@@ -43,9 +43,7 @@ const CustomValue = ({ innerRef, innerProps, data }) => {
 
 const headerBottom = (props) => {
   const { t } = useTranslation();
-  const [selectedOption, setSelectedOption] = React.useState(
-    options.find((opt) => opt.value == i18n.language)
-  );
+  const [selectedOption, setSelectedOption] = React.useState(options.find((opt) => opt.value == i18n.language));
 
   const handleSelectLanguage = (props) => {
     setSelectedOption(props);
@@ -59,7 +57,7 @@ const headerBottom = (props) => {
         position: "sticky",
         top: 0,
         zIndex: 9999,
-        backgroundColor: "white",
+        backgroundColor: "white"
       }}
     >
       <div className="container">
@@ -67,12 +65,7 @@ const headerBottom = (props) => {
           <div className="col-md-auto col-12">
             <div className="navbar-header d-flex justify-content-between">
               <a href="/" className="logo navbar-brand">
-                <Image
-                  src="/images/logo.png"
-                  alt="logo"
-                  height="100px"
-                  width="100px"
-                />
+                <Image src="/images/logo.png" alt="logo" height="100px" width="100px" />
               </a>
               <button
                 className="navbar-toggle collapsed d-block d-md-none"
@@ -98,10 +91,10 @@ const headerBottom = (props) => {
                         components={{
                           Option: CustomOption,
                           SingleValue: CustomValue,
-                          Input: () => null,
+                          Input: () => null
                         }}
                         styles={{
-                          container: (base) => ({ ...base, width: 150 }),
+                          container: (base) => ({ ...base, width: 150 })
                         }}
                       />
                     </a>

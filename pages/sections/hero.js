@@ -5,10 +5,7 @@ const Hero = () => {
   return (
     <div id="hero-area" className="hero-slider">
       {/* <!--Hero Slide Item Start--> */}
-      <div
-        className="hs-item"
-        style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}
-      >
+      <div className="hs-item" style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}>
         <div className="container">
           <div className="row">
             {/* <!--Hero Slide Content--> */}
@@ -19,10 +16,10 @@ const Hero = () => {
                     {/* <h2>{t("human effort")}</h2> */}
                     <h1>{t("how we are")}</h1>
                     <p>{t("our mission")}</p>
-                    <a href="#about-area" data-scroll className="btn btn-xlg">
+                    {/* <a href="#about-area" data-scroll className="btn btn-xlg">
                       {t("join with us")}{" "}
                       <i className="zmdi zmdi-long-arrow-right"></i>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
