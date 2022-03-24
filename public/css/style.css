@@ -3604,7 +3604,7 @@ blockquote {
   width: 100%;
   color: #ffffff;
   margin-bottom: 0px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 /*-- Event css Start --*/
 .wd_event_wrapper {
@@ -4657,9 +4657,9 @@ blockquote {
   #clockdiv > div {
     margin: 30px 10px;
   }
-  .wd_story_line {
+  /* .wd_story_line {
     display: none;
-  }
+  } */
   .wd_story_dot {
     display: none;
   }
@@ -4810,9 +4810,9 @@ blockquote {
     width: 70%;
     padding: 50px 0px 50px 0px;
   }
-  .wd_story_line {
+  /* .wd_story_line {
     display: none;
-  }
+  } */
   .wd_story_dot {
     display: none;
   }
