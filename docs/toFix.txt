@@ -11,6 +11,7 @@ TODO:
     Best practises for show photos?
         if there are a lot of photos -> slow loading times
         maybe another section? - yes ✅ 16/03
+    Add footer
 
 
     To check today with Arti:
@@ -27,6 +28,3 @@ TODO:
         about-area.js reduce padding top on mobile version 
         hero.js (more than 1 view) - check template
         href from menu to Data doesnt work pretty good
-    
-    Need to add:
-        footer

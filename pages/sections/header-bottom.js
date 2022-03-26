@@ -10,7 +10,8 @@ import Flags from "country-flag-icons/react/3x2";
 const options = [
   { value: "es", label: "Español", country: "ES" },
   { value: "en", label: "English", country: "GB" },
-  { value: "ru", label: "Russian", country: "RU" }
+  { value: "ru", label: "Russian", country: "RU" },
+  { value: "ua", label: "Ukraine", country: "UA" }
 ];
 
 const CustomOption = ({ innerRef, innerProps, data }) => {
