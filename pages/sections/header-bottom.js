@@ -11,7 +11,7 @@ const options = [
   { value: "es", label: "Español", country: "ES" },
   { value: "en", label: "English", country: "GB" },
   { value: "ru", label: "Russian", country: "RU" },
-  { value: "ua", label: "Ukraine", country: "UA" }
+  { value: "uk", label: "Ukrainian", country: "UA" }
 ];
 
 const CustomOption = ({ innerRef, innerProps, data }) => {

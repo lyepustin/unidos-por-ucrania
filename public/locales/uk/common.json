@@ -28,9 +28,9 @@
   "partners text": "Agradecemos el apoyo de las {{partners}} empresas que colaboran con el grupo aportando material o ayuda logística.",
   "volunteers": "Voluntarios",
   "volunteers text": "Nada de lo anterior habría sido posible sin la ayuda de nuestra red de incansables voluntarios, ¡tenemos más de {{volunteers}} magníficos seres humanos!",
-  "header_home": "Principal",
-  "header_about": "Acerca de",
-  "header_service": "Datos",
-  "header_gallery": "Galería",
-  "header_contact us": "Contacto"
+  "header_home": "Головний",
+  "header_about": "Про",
+  "header_service": "Дані",
+  "header_gallery": "Галерея",
+  "header_contact us": "Контакт"
 }

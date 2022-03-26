@@ -11,11 +11,12 @@ TODO:
     Best practises for show photos?
         if there are a lot of photos -> slow loading times
         maybe another section? - yes ✅ 16/03
-    Add footer
+    
 
 
     To check today with Arti:
         import: 
+            lenguage system broken
             Details generate info by demand (fill values with database, not new .js for event)
             Logo smaller in mobile version
         low import:
@@ -23,6 +24,7 @@ TODO:
             What about videos? Where to upload?
             Remember please: How to hide info like hero.js <p> line 18 on mobile version?
     
+    Add footer
     
     More latter:
         about-area.js reduce padding top on mobile version 
