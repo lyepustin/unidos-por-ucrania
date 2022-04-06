@@ -101,19 +101,21 @@ const Timeline = () => {
                   </div>
                 </div>
 
-                <div id="02/04/2022" className="wd_story_covers_box_right">
-                  <div className="wd_story_dot">
-                    <span></span>
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>02/04/2022</span>
-                    <h1>Orihuela</h1>
-                    <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/02-04.jpg" alt="Story" />
-                  </div>
-                </div> 
+                <a href="/entries/04-02">
+                  <div id="02/04/2022" className="wd_story_covers_box_right">
+                    <div className="wd_story_dot">
+                      <span></span>
+                    </div>
+                    <div className="wd_story_covers_box_datails">
+                      <span>02/04/2022</span>
+                      <h1>Orihuela</h1>
+                      <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
+                    </div>
+                    <div className="wd_story_covers_box_img">
+                      <img src="images/timeline/02-04.jpg" alt="Story" />
+                    </div>
+                  </div> 
+                </a>
 
                 {/* <div id="05/03/2022" className="wd_story_covers_box_left">
                   <div className="wd_story_dot">
