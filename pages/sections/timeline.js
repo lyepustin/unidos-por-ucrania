@@ -99,7 +99,38 @@ const Timeline = () => {
                     </p>
                   </div>
                 </div>
-                {/* 
+
+                <div id="02/04/2022" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>02/04/2022</span>
+                    <h1>Orihuela</h1>
+                    <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/02-04.jpg" alt="Story" />
+                  </div>
+                </div> 
+
+                {/* <div id="05/03/2022" className="wd_story_covers_box_left">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/5-03.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>05/03/2022</span>
+                    <h1>1º tráiler</h1>
+                    <p>
+                      Se carga y envía el primer tráiler con 33 palets (más de 750 cajas de ayuda humanitaria) con
+                      dirección Lviv.
+                    </p>
+                  </div>
+                </div>
+
                 <div id="04/03/2022" className="wd_story_covers_box_right">
                   <div className="wd_story_dot">
                     <span></span>
@@ -112,7 +143,7 @@ const Timeline = () => {
                   <div className="wd_story_covers_box_img">
                     <img src="images/timeline/4-03.jpg" alt="Story" />
                   </div>
-                </div> */}
+                </div>  */}
               </div>
             </div>
           </div>
