@@ -9,7 +9,6 @@ import Galery from "pages/sections/galery";
 import AboutArea from "pages/sections/about-area";
 import ContactArea from "pages/sections/contact-area";
 import Timeline from "pages/sections/timeline";
-import Details from "pages/sections/details";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <div className="wrapper fix">
         <Hero />
         <Service />
-        {/* <Details /> */}
         <Timeline />
         <AboutArea />
         {/* <Galery /> */}

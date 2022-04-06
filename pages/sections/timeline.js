@@ -16,7 +16,7 @@ const Timeline = () => {
               <div className="wd_story_covers">
                 <div className="wd_story_line"></div>
 
-                <a href="/details">
+                <a href="/entries/02-28">
                   <div id="28/02/2022" className="wd_story_covers_box_left">
                     <div className="wd_story_dot">
                       <span></span>
@@ -34,24 +34,25 @@ const Timeline = () => {
                     </div>
                   </div>
                 </a>
-
-                <div id="02/03/2022" className="wd_story_covers_box_right">
-                  <div className="wd_story_dot">
-                    <span></span>
+                <a href="/entries/03-02">
+                  <div id="02/03/2022" className="wd_story_covers_box_right">
+                    <div className="wd_story_dot">
+                      <span></span>
+                    </div>
+                    <div className="wd_story_covers_box_datails">
+                      <span>02/03/2022</span>
+                      <h1>Beniel</h1>
+                      <p>
+                        Una furgoneta que contiene más de 50 cajas de ayuda humanitaria recogidos en la cafeteria
+                        Alonushka - Beniel (Murcia, España) y donados por el pueblo de Santomera sale en dirección
+                        Ucrania.
+                      </p>
+                    </div>
+                    <div className="wd_story_covers_box_img">
+                      <img src="images/timeline/2-03.jpg" alt="Story" />
+                    </div>
                   </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>02/03/2022</span>
-                    <h1>Beniel</h1>
-                    <p>
-                      Una furgoneta que contiene más de 50 cajas de ayuda humanitaria recogidos en la cafeteria
-                      Alonushka - Beniel (Murcia, España) y donados por el pueblo de Santomera sale en dirección
-                      Ucrania.
-                    </p>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/2-03.jpg" alt="Story" />
-                  </div>
-                </div>
+                </a>
 
                 <div id="03/03/2022" className="wd_story_covers_box_left">
                   <div className="wd_story_dot">
