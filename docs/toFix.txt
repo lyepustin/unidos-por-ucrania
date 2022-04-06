@@ -13,13 +13,17 @@ TODO:
         maybe another section? - yes ✅ 16/03
     
 
-
-    To check today with Arti:
+    To check today with Arti (06/04/2022):
         import: 
             lenguage system broken
-            Details generate info by demand (fill values with database, not new .js for event)
-            Logo smaller in mobile version
+                Ukranian and Russian not working
+            More details from card in timeline 
+                create new .js for card?
+                how next and previous element?
+                how to back to main menu
+            
         low import:
+            Logo smaller in mobile version
             Images (how to display "pretty way") in details.
             What about videos? Where to upload?
             Remember please: How to hide info like hero.js <p> line 18 on mobile version?

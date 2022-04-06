@@ -16,22 +16,24 @@ const Timeline = () => {
               <div className="wd_story_covers">
                 <div className="wd_story_line"></div>
 
-                <div id="28/02/2022" className="wd_story_covers_box_left">
-                  <div className="wd_story_dot">
-                    <span></span>
+                <a href="/details">
+                  <div id="28/02/2022" className="wd_story_covers_box_left">
+                    <div className="wd_story_dot">
+                      <span></span>
+                    </div>
+                    <div className="wd_story_covers_box_img">
+                      <img src="images/timeline/28-02.jpg" alt="Story" />
+                    </div>
+                    <div className="wd_story_covers_box_datails">
+                      <span>28/02/2022</span>
+                      <h1>Beniel</h1>
+                      <p>
+                        Una furgoneta con remolque que contiene más de 90 cajas de ayuda humanitaria recogidos en la
+                        cafeteria Alonushka - Beniel (Murcia, España) sale en dirección Ucrania.
+                      </p>
+                    </div>
                   </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/28-02.jpg" alt="Story" />
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>28/02/2022</span>
-                    <h1>Beniel</h1>
-                    <p>
-                      Una furgoneta con remolque que contiene más de 90 cajas de ayuda humanitaria recogidos en la
-                      cafeteria Alonushka - Beniel (Murcia, España) sale en dirección Ucrania.
-                    </p>
-                  </div>
-                </div>
+                </a>
 
                 <div id="02/03/2022" className="wd_story_covers_box_right">
                   <div className="wd_story_dot">
