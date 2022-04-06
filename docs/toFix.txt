@@ -11,12 +11,13 @@ TODO:
     Best practises for show photos?
         if there are a lot of photos -> slow loading times
         maybe another section? - yes ✅ 16/03
+    lenguage system broken
+                Ukranian and Russian not working ✅ 06/04
     
 
     To check today with Arti (06/04/2022):
         import: 
-            lenguage system broken
-                Ukranian and Russian not working ✅ 06/04
+            Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
             More details from card in timeline 
                 create new .js for card?
                 how next and previous element?

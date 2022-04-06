@@ -1,12 +1,11 @@
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HeaderBottom from "pages/sections/header-bottom";
-import Details from "pages/sections/details";
+import Details from "./entry";
 
 export default function Home() {
   return (
     <div>
-      {/* <HeaderTop /> */}
       <HeaderBottom />
       <div className="wrapper fix">
         <Details />
