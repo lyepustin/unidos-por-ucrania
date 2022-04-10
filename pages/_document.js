@@ -13,7 +13,7 @@ export default function Document() {
         <meta property="og:title" content="Unidos por Ucrania" />
         <meta name="twitter:card" content="summary" />
         <meta property="og:description" content="Grupo de iniciativas de ayuda humanitaria a Ucrania desde España" />
-        <meta property="og:image" content="/public/images/logo.png" />
+        <meta property="og:image" content="/images/logo.png" />
       </Head>
       <body>
         <Main />
