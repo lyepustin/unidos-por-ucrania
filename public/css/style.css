@@ -2908,7 +2908,7 @@ blockquote {
 .wd_slider_wrapper {
   float: left;
   width: 100%;
-  background: url(../images/header/slider.jpg);
+  /* background: url(../images/header/slider.jpg); */
   position: relative;
   background-attachment: fixed;
   position: relative;
@@ -2977,7 +2977,7 @@ blockquote {
 }
 #snow {
   background: none;
-  background-image: url("../images/header/sn1.png"), url("../images/header/sn2.png"), url("../images/header/sn3.png");
+  /* background-image: url("../images/header/sn1.png"), url("../images/header/sn2.png"), url("../images/header/sn3.png"); */
   height: 100%;
   left: 0;
   position: absolute;
@@ -3208,7 +3208,7 @@ blockquote {
 .wd_about_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/about_bg.jpg);
+  /* background-image: url(../images/content/about_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -4474,7 +4474,7 @@ blockquote {
 .wd_footer_wrapper {
   float: left;
   width: 100%;
-  background-image: url(../images/content/footer_bg.jpg);
+  /* background-image: url(../images/content/footer_bg.jpg); */
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
