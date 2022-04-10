@@ -940,7 +940,7 @@ textarea:-ms-input-placeholder {
 }
 .section-title-2 h1 {
   font-size: 36px;
-  background: rgba(0, 0, 0, 0) url("../img/title-shape-light.png") no-repeat scroll center bottom;
+  /* background: rgba(0, 0, 0, 0) url("../img/title-shape-light.png") no-repeat scroll center bottom; */
   color: #ffffff;
   text-transform: uppercase;
   line-height: 26px;
@@ -1766,7 +1766,7 @@ textarea:-ms-input-placeholder {
 /*  6.  Doantion Area
 /*----------------------------------------*/
 .donation-area {
-  background-image: url(../img/bg/donation.jpg);
+  /* background-image: url(../img/bg/donation.jpg); */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -2015,7 +2015,7 @@ textarea:-ms-input-placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
-  background-image: url(../img/bg/achivment.jpg);
+  /* background-image: url(../img/bg/achivment.jpg); */
 }
 
 .single-achivment img {
@@ -2139,7 +2139,7 @@ textarea:-ms-input-placeholder {
 /*----------------------------------------*/
 /*Video Wrapper*/
 .video-wrapper {
-  background-image: url(../img/bg/video.jpg);
+  /* background-image: url(../img/bg/video.jpg); */
   background-size: cover;
   background-position: center center;
   padding: 110px 0;
@@ -2673,7 +2673,7 @@ blockquote {
 /*----------------------------------------*/
 /*Footer Top*/
 .footer-top {
-  background-image: url(../img/bg/footer.jpg);
+  /* background-image: url(../img/bg/footer.jpg); */
   background-size: cover;
   background-position: center bottom;
 }

@@ -4,8 +4,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" />
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+        {/* <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" /> */}
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 
         {/* Customize Social Media Preview of your Website Links */}
         <meta property="og:url" content="https://unidosporucrania.ml/" />
