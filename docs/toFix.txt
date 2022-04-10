@@ -22,12 +22,17 @@ TODO:
                 create new .js for card?
                 how next and previous element?
                 how to back to main menu
+
+    To fix:
+        image on details mode
+        image on preview
+        add Daria content
             
-        low import:
-            Logo smaller in mobile version
-            Images (how to display "pretty way") in details.
-            What about videos? Where to upload?
-            Remember please: How to hide info like hero.js <p> line 18 on mobile version?
+    low import:
+        Logo smaller in mobile version
+        Images (how to display "pretty way") in details.
+        What about videos? Where to upload?
+        Remember please: How to hide info like hero.js <p> line 18 on mobile version?
     
     Add footer
     
