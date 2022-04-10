@@ -13,19 +13,18 @@ TODO:
         maybe another section? - yes ✅ 16/03
     lenguage system broken
                 Ukranian and Russian not working ✅ 06/04
+    how next and previous element? ✅ 06/04
+    how to back to main menu ✅ 06/04
+    image on preview ✅ 10/04
     
 
     To check today with Arti (06/04/2022):
-        import: 
-            Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
-            More details from card in timeline 
-                create new .js for card?
-                how next and previous element?
-                how to back to main menu
-
-    To fix:
+        Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
+        Nextjs images (background & hero)
+        npm run build (some many errors)
+                
+    Todo list:
         image on details mode
-        image on preview
         add Daria content
             
     low import:

@@ -112,9 +112,9 @@ const Timeline = () => {
                       <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
                     </div>
                     <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/02-04.jpg" alt="Story" />
+                      <img src="images/timeline/2-04.jpg" alt="Story" />
                     </div>
-                  </div> 
+                  </div>
                 </a>
 
                 {/* <div id="05/03/2022" className="wd_story_covers_box_left">
