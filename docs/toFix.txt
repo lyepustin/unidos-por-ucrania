@@ -19,6 +19,7 @@ TODO:
     
 
     To check today with Arti (06/04/2022):
+        ¿Quizas timeline orden ascendente?
         Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
         Nextjs images (background & hero)
         npm run build (some many errors)
