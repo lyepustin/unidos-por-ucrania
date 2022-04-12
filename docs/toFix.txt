@@ -20,6 +20,7 @@ TODO:
 
     To check today with Arti (06/04/2022):
         ¿Quizas timeline orden ascendente?
+            posibilidad de ordenar (ascendente o descendente)?
         Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
         Nextjs images (background & hero)
         npm run build (some many errors)
@@ -40,3 +41,8 @@ TODO:
         about-area.js reduce padding top on mobile version 
         hero.js (more than 1 view) - check template
         href from menu to Data doesnt work pretty good
+
+    add this info:
+        - 2 tráileres completos (con un peso máximo de 24.000 kg).
+        - 66 palés de mercancías humanitarias (peso medio por palé 100 kg)
+        - 1518 cajas de suministros humanitarios (23 cajas por palé de media)
