@@ -1,15 +1,15 @@
 const Database = () => {
   return {
     "pick-up points": 3,
-    "pick-up city": 3,
     "logistics centres": 2,
-    "boxes recived": 2000,
-    "trucks sent": 2,
-    "palets sent": 66,
-    "boxes sent": 1518,
+    "boxes recived": 3800,
+    "trucks sent": 3,
+    "palets sent": 96,
+    "boxes sent": 2208,
     "number of associations": 3,
-    "number of partners": 5,
-    "number of volunteers": 30
+    "number of partners": 30,
+    "number of volunteers": 50,
+    "destinations": ["Lviv", "Rivne", "Zaporizhzhia", "Mykolaiv", "Ternopil", "Vinnytsia", "Chernivtsi", "Dnipro"]
   };
 };
 
