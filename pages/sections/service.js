@@ -33,7 +33,8 @@ const Service = () => {
                 marginBottom: "14px"
               }}
             >
-              <div className="text-3xl font-bold text-gray-800 mr-2">+{ActualDatabase["pick-up points"]}</div>
+              <div className="text-3xl font-bold text-gray-800 mr-2">{ActualDatabase["pick-up points"]}</div>
+
               <div className="text-xl text-gray-500">{t("pick-up")}</div>
             </div>
             <p>{t("pick-up info")}</p>
@@ -99,7 +100,7 @@ const Service = () => {
                 marginBottom: "14px"
               }}
             >
-              <div className="text-3xl font-bold text-gray-800 mr-2">+{ActualDatabase["palets sent"]}</div>
+              <div className="text-3xl font-bold text-gray-800 mr-2">{ActualDatabase["palets sent"]}</div>
               <div className="text-xl text-gray-500">{t("humanitarian supplies palets")}</div>
             </div>
 

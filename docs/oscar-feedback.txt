@@ -1,0 +1,9 @@
+el puto logo
+    hazlo + pequeño
+    hazlo rectangular
+
+quitar el gris del paging (ucranian fest)
+
+no matar moscas a cañonazos
+
+solucionar solo los errores para hacer build

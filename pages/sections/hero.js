@@ -1,8 +1,10 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import heroPic from "/public/images/hero.jpg";
+import Database from "data/bbdd";
 
 const Hero = () => {
+  const ActualDatabase = Database();
   const { t } = useTranslation();
   return (
     <div id="hero-area" className="hero-slider">
@@ -14,7 +16,11 @@ const Hero = () => {
                 <div className="col-xl-8 col-lg-6 col-md-8 col-9 offset-lg-1 offset-xxl-0">
                   <div className="hs-content">
                     <h1>{t("how we are")}</h1>
-                    <p>{t("our mission")}</p>
+                    <p>
+                      {t("our mission")} Nuestra ayuda ha llegado directamente a los siguientes pueblos:
+                      {ActualDatabase["destinations"].map((e) => " " + e)}
+                    </p>
+                    <p></p>
                   </div>
                 </div>
               </div>
