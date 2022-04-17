@@ -1,6 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 
-const directions = { previous: "/entries/02-28", next: "/entries/03-02" };
+const directions = { previous: "/entries/02-28", next: "/entries/04-02" };
 
 const Entry = () => {
   return (
@@ -8,22 +8,6 @@ const Entry = () => {
       <div className="container">
         <div className="row">
           <div className="blog-details-wrapper col-xl-8 col-lg-10 col-12 mx-auto">
-            <div id="navigation" className="mt-1 mb-2">
-              <div className="flex justify-between">
-                <a className="text-base" href="/">
-                  <i className="zmdi zmdi-home"></i>
-                </a>
-                <div>
-                  <a className="text-base mr-5" href={directions["previous"]}>
-                    <i className="zmdi zmdi-long-arrow-left"></i>
-                  </a>
-                  <a className="text-base" href={directions["next"]}>
-                    <i className="zmdi zmdi-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <div className="blog-details-media">
               <img src="/img/blog/single.jpg" alt="blog" />
             </div>
@@ -77,20 +61,38 @@ const Entry = () => {
                 </Zoom>
               </div>
 
-              <div className="mt-5">
-                <div className="flex justify-between">
-                  <a className="text-base" href="/">
-                    home
-                  </a>
-                  <div>
-                    <a className="text-base mr-5" href="/">
-                      ← previa
-                    </a>
-                    <a className="text-base" href="#">
-                      siguiente →
+              <div id="pagination" class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
+                <nav class="flex justify-between" role="navigation" aria-label="Navigation">
+                  <div class="flex-1 mr-2">
+                    <a
+                      class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500"
+                      href={directions["previous"]}
+                    >
+                      <i className="zmdi zmdi-long-arrow-left"></i>
                     </a>
                   </div>
-                </div>
+
+                  <div class="grow text-center">
+                    <ul class="inline-flex text-sm font-medium -space-x-px">
+                      <li>
+                        <span class="inline-flex items-center justify-center rounded-full leading-5 px-2 py-2 bg-white border border-gray-200 text-indigo-500 shadow-sm">
+                          <a className="text-base" href="/">
+                            <i className="zmdi zmdi-home"></i>
+                          </a>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="flex-1 text-right ml-2">
+                    <a
+                      class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500"
+                      href={directions["next"]}
+                    >
+                      <i className="zmdi zmdi-long-arrow-right"></i>
+                    </a>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>

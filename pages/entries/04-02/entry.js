@@ -8,77 +8,6 @@ const Entry = () => {
       <div className="container">
         <div className="row">
           <div className="blog-details-wrapper col-xl-8 col-lg-10 col-12 mx-auto">
-            {/* <div id="navigation" className="mt-1 mb-2">
-              <div className="flex justify-between">
-                <a className="text-base" href="/">
-                  <i className="zmdi zmdi-home"></i>
-                </a>
-                <div>
-                  <a className="text-base mr-5" href={directions["previous"]}>
-                    <i className="zmdi zmdi-long-arrow-left"></i>
-                  </a>
-                  <a className="text-base" href={directions["next"]}>
-                    <i className="zmdi zmdi-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
-              <nav class="flex justify-between" role="navigation" aria-label="Navigation">
-                <div class="flex-1 mr-2">
-                  <a
-                    class="btn bg-white border-gray-200 text-gray-300 cursor-not-allowed"
-                    href="#0"
-                    // disabled="disabled"
-                  >
-                    &lt;-<span class="hidden sm:inline">&nbsp;Previous</span>
-                  </a>
-                </div>
-                <div class="grow text-center">
-                  <ul class="inline-flex text-sm font-medium -space-x-px">
-                    <li>
-                      <span class="inline-flex items-center justify-center rounded-full leading-5 px-2 py-2 bg-white border border-gray-200 text-indigo-500 shadow-sm">
-                        <span class="w-5">1</span>
-                      </span>
-                    </li>
-                    <li>
-                      <a
-                        class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                        href="#0"
-                      >
-                        <span class="w-5">2</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                        href="#0"
-                      >
-                        <span class="w-5">3</span>
-                      </a>
-                    </li>
-                    <li>
-                      <span class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-400">…</span>
-                    </li>
-                    <li>
-                      <a
-                        class="inline-flex items-center justify-center rounded-r leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                        href="#0"
-                      >
-                        <span class="w-5">9</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="flex-1 text-right ml-2">
-                  <a class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500" href="#0">
-                    <span class="hidden sm:inline">Next&nbsp;</span>-&gt;
-                  </a>
-                </div>
-              </nav>
-            </div> */}
-
             <div className="blog-details-media" style={{ marginTop: "30px" }}>
               <img src="/images/blog/UkraniaFest.jpg" alt="blog" />
             </div>
@@ -155,75 +84,38 @@ const Entry = () => {
                 </Zoom>
               </div>
 
-              <div class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
+              <div id="pagination" class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
                 <nav class="flex justify-between" role="navigation" aria-label="Navigation">
                   <div class="flex-1 mr-2">
                     <a
-                      class="btn bg-white border-gray-200 text-gray-300 cursor-not-allowed"
-                      href="#0"
-                      // disabled="disabled"
+                      class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500"
+                      href={directions["previous"]}
                     >
-                      &lt;-<span class="hidden sm:inline">&nbsp;Previous</span>
+                      <i className="zmdi zmdi-long-arrow-left"></i>
                     </a>
                   </div>
+
                   <div class="grow text-center">
                     <ul class="inline-flex text-sm font-medium -space-x-px">
                       <li>
                         <span class="inline-flex items-center justify-center rounded-full leading-5 px-2 py-2 bg-white border border-gray-200 text-indigo-500 shadow-sm">
-                          <span class="w-5">1</span>
+                          <a className="text-base" href="/">
+                            <i className="zmdi zmdi-home"></i>
+                          </a>
                         </span>
-                      </li>
-                      <li>
-                        <a
-                          class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                          href="#0"
-                        >
-                          <span class="w-5">2</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                          href="#0"
-                        >
-                          <span class="w-5">3</span>
-                        </a>
-                      </li>
-                      <li>
-                        <span class="inline-flex items-center justify-center leading-5 px-2 py-2 text-gray-400">…</span>
-                      </li>
-                      <li>
-                        <a
-                          class="inline-flex items-center justify-center rounded-r leading-5 px-2 py-2 text-gray-600 hover:text-indigo-500 border border-transparent"
-                          href="#0"
-                        >
-                          <span class="w-5">9</span>
-                        </a>
                       </li>
                     </ul>
                   </div>
-                  <div class="flex-1 text-right ml-2">
-                    <a class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500" href="#0">
-                      <span class="hidden sm:inline">Next&nbsp;</span>-&gt;
-                    </a>
-                  </div>
-                </nav>
-              </div>
 
-              <div className="mt-5">
-                <div className="flex justify-between">
-                  <a className="text-base" href="/">
-                    <i className="zmdi zmdi-home"></i>
-                  </a>
-                  <div>
-                    <a className="text-base mr-5" href={directions["previous"]}>
-                      <i className="zmdi zmdi-long-arrow-left"></i>
-                    </a>
-                    <a className="text-base" href={directions["next"]}>
+                  <div class="flex-1 text-right ml-2">
+                    <a
+                      class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500"
+                      href={directions["next"]}
+                    >
                       <i className="zmdi zmdi-long-arrow-right"></i>
                     </a>
                   </div>
-                </div>
+                </nav>
               </div>
             </div>
           </div>
