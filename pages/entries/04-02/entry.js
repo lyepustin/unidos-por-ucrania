@@ -1,5 +1,7 @@
 import Zoom from "react-medium-image-zoom";
 
+import Pagination from "components/pagination";
+
 const directions = { previous: "/entries/03-02", next: "/entries/04-02" };
 
 const Entry = () => {
@@ -84,7 +86,10 @@ const Entry = () => {
                 </Zoom>
               </div>
 
-              <div id="pagination" class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
+              <Pagination previous={directions["previous"]} next={directions["next"]}></Pagination>
+              <Pagination previous={directions["previous"]}></Pagination>
+
+              {/* <div id="pagination" class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
                 <nav class="flex justify-between" role="navigation" aria-label="Navigation">
                   <div class="flex-1 mr-2">
                     <a
@@ -116,7 +121,7 @@ const Entry = () => {
                     </a>
                   </div>
                 </nav>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
