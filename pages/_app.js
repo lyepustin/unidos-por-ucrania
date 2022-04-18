@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Script src="js/modernizr-2.8.3.min.js" defer={true} />
-      <Script src="js/bootstrap.min.js" defer={true} />
+      <Script src="/js/modernizr-2.8.3.min.js" defer={true} />
+      <Script src="/js/bootstrap.min.js" defer={true} />
 
       <Component {...pageProps} />
     </>
