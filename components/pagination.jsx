@@ -1,5 +1,4 @@
 export default function Pagination(props) {
-    console.log(props);
     return (
         <div id="pagination" class="px-6 py-8 rounded-sm" style={{ margin: "30px" }}>
         <nav class="flex justify-between" role="navigation" aria-label="Navigation">

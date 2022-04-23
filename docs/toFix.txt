@@ -18,6 +18,14 @@ TODO:
     image on preview ✅ 10/04
     
 
+    Todo (23/04):
+        timeline orden ascendente
+        change picture background
+        translate all content
+        arreglar errores de build
+        add content from events
+        add metric from events
+
     To check today with Arti (06/04/2022):
         ¿Quizas timeline orden ascendente?
             posibilidad de ordenar (ascendente o descendente)?
