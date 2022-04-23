@@ -18,6 +18,28 @@ const Service = () => {
         </div>
 
         <div className="row">
+          <div id="events" className="single-service col-lg-4 col-md-6 col-12 mb-45">
+            <span
+              className="image"
+              style={{
+                backgroundImage: "url('images/sections/event.png')",
+                height: "52px",
+                width: "57px"
+              }}
+            ></span>
+            <div
+              style={{
+                lineHeight: "13px",
+                marginBottom: "14px"
+              }}
+            >
+              <div className="text-3xl font-bold text-gray-800 mr-2">{ActualDatabase["events"]}</div>
+
+              <div className="text-xl text-gray-500">{t("events")}</div>
+            </div>
+            <p>{t("events info")}</p>
+          </div>
+
           <div id="pick-up" className="single-service col-lg-4 col-md-6 col-12 mb-45">
             <span
               className="image"
@@ -89,9 +111,9 @@ const Service = () => {
             <span
               className="image"
               style={{
-                backgroundImage: "url('images/sections/logistic.png')",
-                height: "58px",
-                width: "57px"
+                backgroundImage: "url('images/sections/palet.png')",
+                height: "57px",
+                width: "55px"
               }}
             ></span>
             <div
@@ -100,7 +122,7 @@ const Service = () => {
                 marginBottom: "14px"
               }}
             >
-              <div className="text-3xl font-bold text-gray-800 mr-2">{ActualDatabase["palets sent"]}</div>
+              <div className="text-3xl font-bold text-gray-800 mr-2">+{ActualDatabase["palets sent"]}</div>
               <div className="text-xl text-gray-500">{t("humanitarian supplies palets")}</div>
             </div>
 
@@ -111,9 +133,9 @@ const Service = () => {
             <span
               className="image"
               style={{
-                backgroundImage: "url('images/sections/logistic.png')",
-                height: "58px",
-                width: "57px"
+                backgroundImage: "url('images/sections/trailer.png')",
+                height: "50px",
+                width: "151px"
               }}
             ></span>
             <div
@@ -133,8 +155,8 @@ const Service = () => {
             <span
               className="image"
               style={{
-                backgroundImage: "url('images/sections/logistic.png')",
-                height: "58px",
+                backgroundImage: "url('images/sections/city.png')",
+                height: "50px",
                 width: "57px"
               }}
             ></span>
@@ -160,12 +182,17 @@ const Service = () => {
                 width: "57px"
               }}
             ></span>
-            <h4>{t("associations")}</h4>
-            <p>
-              {t("associations text", {
-                associations: ActualDatabase["number of associations"]
-              })}
-            </p>
+            <div
+              style={{
+                lineHeight: "13px",
+                marginBottom: "14px"
+              }}
+            >
+              <div className="text-3xl font-bold text-gray-800 mr-2">{ActualDatabase["number of associations"]}</div>
+              <div className="text-xl text-gray-500">{t("associations")}</div>
+            </div>
+
+            <p>{t("associations text")}</p>
           </div>
 
           <div id="partnerships" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -177,12 +204,17 @@ const Service = () => {
                 width: "56px"
               }}
             ></span>
-            <h4>{t("partners")}</h4>
-            <p>
-              {t("partners text", {
-                partners: ActualDatabase["number of partners"]
-              })}
-            </p>
+            <div
+              style={{
+                lineHeight: "13px",
+                marginBottom: "14px"
+              }}
+            >
+              <div className="text-3xl font-bold text-gray-800 mr-2">+{ActualDatabase["number of partners"]}</div>
+              <div className="text-xl text-gray-500">{t("partners")}</div>
+            </div>
+
+            <p>{t("partners text")}</p>
           </div>
 
           <div id="volunteers" className="single-service col-lg-4 col-md-6 col-12 mb-45">
@@ -194,12 +226,17 @@ const Service = () => {
                 width: "57px"
               }}
             ></span>
-            <h4>{t("volunteers")}</h4>
-            <p>
-              {t("volunteers text", {
-                volunteers: ActualDatabase["number of volunteers"]
-              })}
-            </p>
+            <div
+              style={{
+                lineHeight: "13px",
+                marginBottom: "14px"
+              }}
+            >
+              <div className="text-3xl font-bold text-gray-800 mr-2">+{ActualDatabase["number of volunteers"]}</div>
+              <div className="text-xl text-gray-500">{t("volunteers")}</div>
+            </div>
+
+            <p>{t("volunteers text")}</p>
           </div>
         </div>
       </div>

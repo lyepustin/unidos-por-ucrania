@@ -20,13 +20,15 @@ TODO:
 
     Todo (23/04):
         timeline orden LIFO ✅
-        change picture background
-        changes images from services
+        change picture background  ❎ - no tengo fotos
+        add metric to services ✅
+        changes images from services ✅
+        review services ✅
         translate all content
         arreglar errores de build
         add content from events
-        add metric from events
         add pagination
+        build production
 
 
     To check today with Arti (06/04/2022):

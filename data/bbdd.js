@@ -1,5 +1,6 @@
 const Database = () => {
   return {
+    "events": 3,
     "pick-up points": 3,
     "logistics centres": 2,
     "boxes recived": 3650,
