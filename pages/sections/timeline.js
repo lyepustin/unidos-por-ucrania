@@ -16,26 +16,71 @@ const Timeline = () => {
               <div className="wd_story_covers">
                 <div className="wd_story_line"></div>
 
-                <a href="/entries/02-28">
-                  <div id="28/02/2022" className="wd_story_covers_box_left">
+                <a href="/entries/04-02">
+                  <div id="02/04/2022" className="wd_story_covers_box_left">
                     <div className="wd_story_dot">
                       <span></span>
                     </div>
-                    <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/28-02.jpg" alt="Story" />
-                    </div>
                     <div className="wd_story_covers_box_datails">
-                      <span>28/02/2022</span>
-                      <h1>Beniel</h1>
-                      <p>
-                        Una furgoneta con remolque que contiene más de 90 cajas de ayuda humanitaria recogidos en la
-                        cafeteria Alonushka - Beniel (Murcia, España) sale en dirección Ucrania.
-                      </p>
+                      <span>02/04/2022</span>
+                      <h1>Orihuela</h1>
+                      <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
+                    </div>
+                    <div className="wd_story_covers_box_img">
+                      <img src="images/timeline/2-04.jpg" alt="Story" />
                     </div>
                   </div>
                 </a>
+
+                <div id="05/03/2022" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/5-03.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>05/03/2022</span>
+                    <h1>1º tráiler</h1>
+                    <p>
+                      Se carga y envía el primer tráiler con 33 palets (más de 750 cajas de ayuda humanitaria) con
+                      dirección Lviv.
+                    </p>
+                  </div>
+                </div>
+
+                <div id="04/03/2022" className="wd_story_covers_box_left">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>04/03/2022</span>
+                    <h1>Ayuntamiento de Beniel</h1>
+                    <p>Se recibe ayuda humanitaria que el ayuntamiento de Beniel deja en un punto de recogida.</p>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/4-03.jpg" alt="Story" />
+                  </div>
+                </div>
+
+                <div id="03/03/2022" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/3-03.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>03/03/2022</span>
+                    <h1>Alquerias Orihuela Santomera</h1>
+                    <p>
+                      Se recoge ayuda humanitaria desde Alquerias (Cáritas o Iglesia), Orihuela (La Lonja) y Santomera.
+                    </p>
+                  </div>
+                </div>
+
                 <a href="/entries/03-02">
-                  <div id="02/03/2022" className="wd_story_covers_box_right">
+                  <div id="02/03/2022" className="wd_story_covers_box_left">
                     <div className="wd_story_dot">
                       <span></span>
                     </div>
@@ -54,65 +99,21 @@ const Timeline = () => {
                   </div>
                 </a>
 
-                <div id="03/03/2022" className="wd_story_covers_box_left">
-                  <div className="wd_story_dot">
-                    <span></span>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/3-03.jpg" alt="Story" />
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>03/03/2022</span>
-                    <h1>Alquerias Orihuela Santomera</h1>
-                    <p>
-                      Se recoge ayuda humanitaria desde Alquerias (Cáritas o Iglesia), Orihuela (La Lonja) y Santomera.
-                    </p>
-                  </div>
-                </div>
-
-                <div id="04/03/2022" className="wd_story_covers_box_right">
-                  <div className="wd_story_dot">
-                    <span></span>
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>04/03/2022</span>
-                    <h1>Ayuntamiento de Beniel</h1>
-                    <p>Se recibe ayuda humanitaria que el ayuntamiento de Beniel deja en un punto de recogida.</p>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/4-03.jpg" alt="Story" />
-                  </div>
-                </div>
-
-                <div id="05/03/2022" className="wd_story_covers_box_left">
-                  <div className="wd_story_dot">
-                    <span></span>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/5-03.jpg" alt="Story" />
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>05/03/2022</span>
-                    <h1>1º tráiler</h1>
-                    <p>
-                      Se carga y envía el primer tráiler con 33 palets (más de 750 cajas de ayuda humanitaria) con
-                      dirección Lviv.
-                    </p>
-                  </div>
-                </div>
-
-                <a href="/entries/04-02">
-                  <div id="02/04/2022" className="wd_story_covers_box_right">
+                <a href="/entries/02-28">
+                  <div id="28/02/2022" className="wd_story_covers_box_right">
                     <div className="wd_story_dot">
                       <span></span>
                     </div>
-                    <div className="wd_story_covers_box_datails">
-                      <span>02/04/2022</span>
-                      <h1>Orihuela</h1>
-                      <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
-                    </div>
                     <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/2-04.jpg" alt="Story" />
+                      <img src="images/timeline/28-02.jpg" alt="Story" />
+                    </div>
+                    <div className="wd_story_covers_box_datails">
+                      <span>28/02/2022</span>
+                      <h1>Beniel</h1>
+                      <p>
+                        Una furgoneta con remolque que contiene más de 90 cajas de ayuda humanitaria recogidos en la
+                        cafeteria Alonushka - Beniel (Murcia, España) sale en dirección Ucrania.
+                      </p>
                     </div>
                   </div>
                 </a>
