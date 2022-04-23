@@ -4,7 +4,7 @@ export default function Pagination(props) {
         <nav class="flex justify-between" role="navigation" aria-label="Navigation">
           <div class="flex-1 mr-2">
             <a
-              class="btn bg-white border-gray-200 hover:border-gray-300 text-indigo-500"
+              className={`btn bg-white border-gray-200 hover:border-gray-300 ${!props.previous ?'text-gray-300 cursor-not-allowed' :'text-indigo-500'}`} 
               href={props.previous}
             >
               <i className="zmdi zmdi-long-arrow-left"></i>
@@ -22,8 +22,6 @@ export default function Pagination(props) {
               </li>
             </ul>
           </div>
-          
-          {/* "text-gray-300 cursor-not-allowed" */}
         
           <div class="flex-1 text-right ml-2">
             <a

@@ -24,10 +24,11 @@ TODO:
         add metric to services ✅
         changes images from services ✅
         review services ✅
+        review pagination ✅ 
+        make images size less
         translate all content
+        disable associations
         arreglar errores de build
-        add content from events
-        add pagination
         build production
 
 
@@ -39,6 +40,9 @@ TODO:
         npm run build (some many errors)
                 
     Todo list:
+        enable associations
+        add content for donate (IBAN)
+        add more info for every timeline event
         image on details mode
         add Daria content
             

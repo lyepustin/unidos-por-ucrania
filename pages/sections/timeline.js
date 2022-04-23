@@ -16,15 +16,43 @@ const Timeline = () => {
               <div className="wd_story_covers">
                 <div className="wd_story_line"></div>
 
-                <a href="/entries/04-02">
-                  <div id="02/04/2022" className="wd_story_covers_box_left">
+                <div id="futbol_orihuela" className="wd_story_covers_box_left">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/24-04.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>24/04/2022</span>
+                    <h1>{t("24/04 title")}</h1>
+                    <p>{t("24/04 text")}</p>
+                  </div>
+                </div>
+
+                <div id="futbol_beniel" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/16-04.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>16/04/2022</span>
+                    <h1>{t("16/04 title")}</h1>
+                    <p>{t("16/04 text")}</p>
+                  </div>
+                </div>
+
+                <a id="orihuela_fest" href="/entries/04-02">
+                  <div className="wd_story_covers_box_left">
                     <div className="wd_story_dot">
                       <span></span>
                     </div>
                     <div className="wd_story_covers_box_datails">
                       <span>02/04/2022</span>
-                      <h1>Orihuela</h1>
-                      <p>Fiesta benéfica para recaudar fondos para la ayuda humanitaria a Ucrania.</p>
+                      <h1>{t("02/04 title")}</h1>
+                      <p>{t("02/04 text")}</p>
                     </div>
                     <div className="wd_story_covers_box_img">
                       <img src="images/timeline/2-04.jpg" alt="Story" />
@@ -32,7 +60,35 @@ const Timeline = () => {
                   </div>
                 </a>
 
-                <div id="05/03/2022" className="wd_story_covers_box_right">
+                <div id="tercer_camion" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/30-03.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>30/03/2022</span>
+                    <h1>{t("30/03 title")}</h1>
+                    <p>{t("30/03 text")}</p>
+                  </div>
+                </div>
+
+                <div id="segundo_camion" className="wd_story_covers_box_left">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/15-03.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>15/03/2022</span>
+                    <h1>{t("15/03 title")}</h1>
+                    <p>{t("15/03 text")}</p>
+                  </div>
+                </div>
+
+                <div id="primer_camion" className="wd_story_covers_box_right">
                   <div className="wd_story_dot">
                     <span></span>
                   </div>
@@ -41,29 +97,26 @@ const Timeline = () => {
                   </div>
                   <div className="wd_story_covers_box_datails">
                     <span>05/03/2022</span>
-                    <h1>1º tráiler</h1>
-                    <p>
-                      Se carga y envía el primer tráiler con 33 palets (más de 750 cajas de ayuda humanitaria) con
-                      dirección Lviv.
-                    </p>
+                    <h1>{t("05/03 title")}</h1>
+                    <p>{t("05/03 text")}</p>
                   </div>
                 </div>
 
-                <div id="04/03/2022" className="wd_story_covers_box_left">
+                <div id="donativos_beniel" className="wd_story_covers_box_left">
                   <div className="wd_story_dot">
                     <span></span>
                   </div>
                   <div className="wd_story_covers_box_datails">
                     <span>04/03/2022</span>
-                    <h1>Ayuntamiento de Beniel</h1>
-                    <p>Se recibe ayuda humanitaria que el ayuntamiento de Beniel deja en un punto de recogida.</p>
+                    <h1>{t("04/03 title")}</h1>
+                    <p>{t("04/03 text")}</p>
                   </div>
                   <div className="wd_story_covers_box_img">
                     <img src="images/timeline/4-03.jpg" alt="Story" />
                   </div>
                 </div>
 
-                <div id="03/03/2022" className="wd_story_covers_box_right">
+                <div id="recogida_varios" className="wd_story_covers_box_right">
                   <div className="wd_story_dot">
                     <span></span>
                   </div>
@@ -72,82 +125,38 @@ const Timeline = () => {
                   </div>
                   <div className="wd_story_covers_box_datails">
                     <span>03/03/2022</span>
-                    <h1>Alquerias Orihuela Santomera</h1>
-                    <p>
-                      Se recoge ayuda humanitaria desde Alquerias (Cáritas o Iglesia), Orihuela (La Lonja) y Santomera.
-                    </p>
+                    <h1>{t("03/03 title")}</h1>
+                    <p>{t("03/03 text")}</p>
                   </div>
                 </div>
 
-                <a href="/entries/03-02">
-                  <div id="02/03/2022" className="wd_story_covers_box_left">
-                    <div className="wd_story_dot">
-                      <span></span>
-                    </div>
-                    <div className="wd_story_covers_box_datails">
-                      <span>02/03/2022</span>
-                      <h1>Beniel</h1>
-                      <p>
-                        Una furgoneta que contiene más de 50 cajas de ayuda humanitaria recogidos en la cafeteria
-                        Alonushka - Beniel (Murcia, España) y donados por el pueblo de Santomera sale en dirección
-                        Ucrania.
-                      </p>
-                    </div>
-                    <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/2-03.jpg" alt="Story" />
-                    </div>
-                  </div>
-                </a>
-
-                <a href="/entries/02-28">
-                  <div id="28/02/2022" className="wd_story_covers_box_right">
-                    <div className="wd_story_dot">
-                      <span></span>
-                    </div>
-                    <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/28-02.jpg" alt="Story" />
-                    </div>
-                    <div className="wd_story_covers_box_datails">
-                      <span>28/02/2022</span>
-                      <h1>Beniel</h1>
-                      <p>
-                        Una furgoneta con remolque que contiene más de 90 cajas de ayuda humanitaria recogidos en la
-                        cafeteria Alonushka - Beniel (Murcia, España) sale en dirección Ucrania.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-
-                {/* <div id="05/03/2022" className="wd_story_covers_box_left">
-                  <div className="wd_story_dot">
-                    <span></span>
-                  </div>
-                  <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/5-03.jpg" alt="Story" />
-                  </div>
-                  <div className="wd_story_covers_box_datails">
-                    <span>05/03/2022</span>
-                    <h1>1º tráiler</h1>
-                    <p>
-                      Se carga y envía el primer tráiler con 33 palets (más de 750 cajas de ayuda humanitaria) con
-                      dirección Lviv.
-                    </p>
-                  </div>
-                </div>
-
-                <div id="04/03/2022" className="wd_story_covers_box_right">
+                <div id="segunda_furgo" className="wd_story_covers_box_left">
                   <div className="wd_story_dot">
                     <span></span>
                   </div>
                   <div className="wd_story_covers_box_datails">
-                    <span>04/03/2022</span>
-                    <h1>Ayuntamiento de Beniel</h1>
-                    <p>Se recibe ayuda humanitaria que el ayuntamiento de Beniel deja en un punto de recogida.</p>
+                    <span>02/03/2022</span>
+                    <h1>{t("02/03 title")}</h1>
+                    <p>{t("02/03 text")}</p>
                   </div>
                   <div className="wd_story_covers_box_img">
-                    <img src="images/timeline/4-03.jpg" alt="Story" />
+                    <img src="images/timeline/2-03.jpg" alt="Story" />
                   </div>
-                </div>  */}
+                </div>
+
+                <div id="primera_furgo" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/28-02.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>28/02/2022</span>
+                    <h1>{t("28/02 title")}</h1>
+                    <p>{t("28/02 text")}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
