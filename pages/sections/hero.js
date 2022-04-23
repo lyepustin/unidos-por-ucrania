@@ -17,8 +17,7 @@ const Hero = () => {
                   <div className="hs-content">
                     <h1>{t("how we are")}</h1>
                     <p>
-                      {t("our mission")} Nuestra ayuda ha llegado directamente a los siguientes pueblos:
-                      {ActualDatabase["destinations"].map((e) => " " + e)}
+                      {t("our mission")} {t("our help")}:{ActualDatabase["destinations"].map((e) => " " + e)}
                     </p>
                     <p></p>
                   </div>
