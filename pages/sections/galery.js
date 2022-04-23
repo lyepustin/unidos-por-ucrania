@@ -1,6 +1,6 @@
 import Zoom from "react-medium-image-zoom";
 
-export default () => {
+const Galery = () => {
   return (
     // <div id="gallery-area" className="gallery-area section pb-100 pt-110">
     <div id="gallery-area" className="section pb-100 pt-110">
@@ -25,3 +25,5 @@ export default () => {
     </div>
   );
 };
+
+export default Galery;

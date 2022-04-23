@@ -1,4 +1,4 @@
-export default () => {
+const headerTop = () => {
   return (
     <div className="header-top">
       <div className="container">
@@ -34,3 +34,5 @@ export default () => {
     </div>
   );
 };
+
+export default headerTop;

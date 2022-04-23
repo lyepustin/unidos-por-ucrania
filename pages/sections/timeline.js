@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 const Timeline = () => {
   const { t } = useTranslation();
@@ -44,21 +45,23 @@ const Timeline = () => {
                   </div>
                 </div>
 
-                <a id="orihuela_fest" href="/entries/04-02">
-                  <div className="wd_story_covers_box_left">
-                    <div className="wd_story_dot">
-                      <span></span>
+                <Link id="orihuela_fest" href="/entries/04-02">
+                  <a>
+                    <div className="wd_story_covers_box_left">
+                      <div className="wd_story_dot">
+                        <span></span>
+                      </div>
+                      <div className="wd_story_covers_box_datails">
+                        <span>02/04/2022</span>
+                        <h1>{t("02/04 title")}</h1>
+                        <p>{t("02/04 text")}</p>
+                      </div>
+                      <div className="wd_story_covers_box_img">
+                        <img src="images/timeline/2-04.jpg" alt="Story" />
+                      </div>
                     </div>
-                    <div className="wd_story_covers_box_datails">
-                      <span>02/04/2022</span>
-                      <h1>{t("02/04 title")}</h1>
-                      <p>{t("02/04 text")}</p>
-                    </div>
-                    <div className="wd_story_covers_box_img">
-                      <img src="images/timeline/2-04.jpg" alt="Story" />
-                    </div>
-                  </div>
-                </a>
+                  </a>
+                </Link>
 
                 <div id="tercer_camion" className="wd_story_covers_box_right">
                   <div className="wd_story_dot">

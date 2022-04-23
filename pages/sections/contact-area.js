@@ -1,4 +1,4 @@
-export default () => {
+const ContactArea = () => {
   return (
     <div id="contact-area" className="contact-area section pb-80 pt-110">
       <div className="container">
@@ -73,3 +73,5 @@ export default () => {
     </div>
   );
 };
+
+export default ContactArea;

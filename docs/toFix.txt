@@ -25,11 +25,11 @@ TODO:
         changes images from services ✅
         review services ✅
         review pagination ✅ 
-        make images size less
+        make images size less ✅
         translate all content
-        disable associations
-        arreglar errores de build
-        build production
+        disable associations ✅
+        arreglar errores de build ✅
+        build production ❎ - errores de build (preguntar arti)
 
 
     To check today with Arti (06/04/2022):
@@ -40,6 +40,7 @@ TODO:
         npm run build (some many errors)
                 
     Todo list:
+        link from nextjs is not clickable
         enable associations
         add content for donate (IBAN)
         add more info for every timeline event
