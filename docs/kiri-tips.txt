@@ -8,6 +8,7 @@ tener bien claro las diferencias entre nextjs vs react
 visual studio code = kaka (no autocompleta)
     JetBrains: Essential tools for software developers and teams
     licencia UMU
+    Arti: fuck you
 
 Lo suyo es usar typescript
     definir una interfaz, autocompletado, esas cosas

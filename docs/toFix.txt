@@ -34,13 +34,11 @@ TODO:
 
     To check today with Arti (25/04/2022):
         Tienes que sacar los componentes de pages o pasa esto https://unidosporucrania.ml/sections/galery
-        npm run build (some many errors)
-        lenguage button is not enought for Ukranian language
+        npm run build (some many errors) ✅
+        lenguage button is not enough for Ukranian language ✅
         
-        
-                
     Todo list:
-        Nextjs images (background & hero)
+        Nextjs images (background & hero) 
         enable associations
         add content for donate (IBAN)
         add more info for every timeline event

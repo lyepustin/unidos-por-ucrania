@@ -8,7 +8,10 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <div id="hero-area" className="hero-slider">
-      <div className="hs-item" style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}>
+      <div
+        className="hs-item"
+        style={{ backgroundImage: "url(images/heroBackgroud.jpg)" }}
+      >
         <div className="container">
           <div className="row">
             <div className="hs-item-wrapper col-12 d-flex">
@@ -17,19 +20,20 @@ const Hero = () => {
                   <div className="hs-content">
                     <h1>{t("how we are")}</h1>
                     <p>
-                      {t("our mission")} {t("our help")}:{ActualDatabase["destinations"].map((e) => " " + e)}
+                      {t("our mission")} {t("our help")}:
+                      {ActualDatabase["destinations"].map((e) => " " + e)}
                     </p>
                     <p></p>
                   </div>
                 </div>
               </div>
-              <div className="hs-image">
+              <div className="hs-image flex">
                 <Image
                   src={heroPic}
                   alt="Picture of the author"
-                  placeholder="blur" // Optional blur-up while loading
+                  placeholder="blur"
+                  objectFit="cover"
                 />
-                {/* <img className="img-fluid" src="images/hero.jpg" alt="" /> */}
               </div>
             </div>
           </div>
