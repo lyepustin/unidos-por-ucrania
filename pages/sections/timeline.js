@@ -4,7 +4,7 @@ import Link from "next/link";
 const Timeline = () => {
   const { t } = useTranslation();
   return (
-    <div section-scroll="2" className="wd_scroll_wrap">
+    <div id="timeline-area" section-scroll="2" className="wd_scroll_wrap">
       <div className="wd_story_wrapper wd_toppadder90 wd_bottompadder90">
         <div className="wd_overlay"></div>
         <div className="container">
@@ -16,6 +16,34 @@ const Timeline = () => {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="wd_story_covers">
                 <div className="wd_story_line"></div>
+
+                <div id="ucrania_fest_beniel" className="wd_story_covers_box_left">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/21-05.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>21/05/2022</span>
+                    <h1>{t("21/05 title")}</h1>
+                    <p>{t("21/05 text")}</p>
+                  </div>
+                </div>
+
+                <div id="tercer_camion" className="wd_story_covers_box_right">
+                  <div className="wd_story_dot">
+                    <span></span>
+                  </div>
+                  <div className="wd_story_covers_box_img">
+                    <img src="images/timeline/04-05.jpg" alt="Story" />
+                  </div>
+                  <div className="wd_story_covers_box_datails">
+                    <span>04/05/2022</span>
+                    <h1>{t("04/05 title")}</h1>
+                    <p>{t("04/05 text")}</p>
+                  </div>
+                </div>
 
                 <div id="futbol_orihuela" className="wd_story_covers_box_left">
                   <div className="wd_story_dot">
