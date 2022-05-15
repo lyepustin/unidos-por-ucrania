@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
         <Service />
         <Timeline />
-        {/* <AboutArea /> */}
+        <AboutArea />
         {/* <Galery /> */}
         {/* <ContactArea /> */}
       </div>

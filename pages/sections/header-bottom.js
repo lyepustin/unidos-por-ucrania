@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { i18n, useTranslation } from "next-i18next";
 import Image from "next/image";
@@ -96,31 +94,22 @@ const headerBottom = (props) => {
                           Input: () => null
                         }}
                         styles={{
-                          container: (base) => ({ ...base, width: 150 })
+                          container: (base) => ({ ...base, width: 170 })
                         }}
                       />
                     </a>
                   </li>
-                  {/* <li className="active">
-                    <a href="#hero-area">{t("header_home")}</a>
-                  </li> */}
                   <li>
-                    <a href="#about-area">{t("header_about")}</a>
+                    <a href="#hero-area">{t("header_about")}</a>
                   </li>
                   <li>
                     <a href="#service-area-anchor">{t("header_service")}</a>
                   </li>
-                  {/* <li>
-                    <a href="#event-area">event</a>
-                  </li> */}
                   <li>
-                    <a href="#gallery-area">{t("header_gallery")}</a>
+                    <a href="#timeline-area">{t("header_gallery")}</a>
                   </li>
-                  {/* <li>
-                    <a href="#blog-area">{t("header_about")}</a>
-                  </li> */}
                   <li>
-                    <a href="#contact-area">{t("header_contact us")}</a>
+                    <a href="#blog-area">{t("header_contact us")}</a>
                   </li>
                 </ul>
               </nav>
