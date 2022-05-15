@@ -1,2 +1,3 @@
 # unidos-por-ucrania
-Website of the Ukrainian group of associations
+## Group of humanitarian aid initiatives to Ukraine from Spain.
+Website based on nextJS + i18 + tailwind 
