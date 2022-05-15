@@ -3,6 +3,7 @@ import { i18n, useTranslation } from "next-i18next";
 import Image from "next/image";
 import Select from "react-select";
 import Flags from "country-flag-icons/react/3x2";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 const options = [
@@ -40,7 +41,7 @@ const CustomValue = ({ innerRef, innerProps, data }) => {
   );
 };
 
-const headerBottom = (props) => {
+const HeaderBottom = (props) => {
   const { t } = useTranslation();
   const router = useRouter();
   const [selectedOption, setSelectedOption] = React.useState(options.find((opt) => opt.value == i18n.language));
@@ -64,9 +65,11 @@ const headerBottom = (props) => {
         <div className="row justify-content-between justify-content-md-center justify-content-lg-between position-relative">
           <div className="col-md-auto col-12">
             <div className="navbar-header d-flex justify-content-between">
-              <a href="/" className="logo navbar-brand">
-                <Image src="/images/logo.png" alt="logo" height="100px" width="100px" />
-              </a>
+              <Link id="link_main" href="/">
+                <a className="logo navbar-brand">
+                  <Image src="/images/logo.png" alt="logo" height="100px" width="100px" />
+                </a>
+              </Link>
               <button
                 className="navbar-toggle collapsed d-block d-md-none"
                 data-bs-toggle="collapse"
@@ -100,16 +103,24 @@ const headerBottom = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="#hero-area">{t("header_about")}</a>
+                    <Link id="link_hero-area" href="#hero-area">
+                      <a>{t("header_about")}</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#service-area-anchor">{t("header_service")}</a>
+                    <Link id="link_service-area-anchor" href="#service-area-anchor">
+                      <a>{t("header_service")}</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#timeline-area">{t("header_gallery")}</a>
+                    <Link id="link_timeline-area" href="#timeline-area">
+                      <a>{t("header_gallery")}</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#blog-area">{t("header_contact us")}</a>
+                    <Link id="link_blog-area" href="#blog-area">
+                      <a>{t("header_contact us")}</a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -121,4 +132,4 @@ const headerBottom = (props) => {
   );
 };
 
-export default headerBottom;
+export default HeaderBottom;
