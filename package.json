@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-windows": "next dev -p 65111",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
