@@ -12,7 +12,7 @@ COPY . .
 RUN npm install
 
 # Building app
-#RUN npm run build
+RUN npm run build
 
 # Running the app
-ENTRYPOINT ["npm", "run", "dev"]
+ENTRYPOINT ["npm", "run", "start"]
