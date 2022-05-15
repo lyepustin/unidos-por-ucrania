@@ -44,7 +44,9 @@ const CustomValue = ({ innerRef, innerProps, data }) => {
 const HeaderBottom = (props) => {
   const { t } = useTranslation();
   const router = useRouter();
-  const [selectedOption, setSelectedOption] = React.useState(options.find((opt) => opt.value == i18n.language));
+  const [selectedOption, setSelectedOption] = React.useState(
+    options.find((opt) => opt.value == i18n?.language ?? "es")
+  );
 
   const handleSelectLanguage = (props) => {
     setSelectedOption(props);

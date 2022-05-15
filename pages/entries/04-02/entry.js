@@ -22,21 +22,27 @@ const Entry = () => {
                 </a>
               </div>
               <p>
-                La asociación de _nombre_ organizó una fiesta solidaria en honor a Ucrania en Orihuela, esta sirvió para
-                recaudar fondos para ayuda humanitaria a favor de los afectados por la invasión de Rusia. La fiesta
-                consistió en:
+                La asociación de _nombre_ organizó una fiesta solidaria en honor
+                a Ucrania en Orihuela, esta sirvió para recaudar fondos para
+                ayuda humanitaria a favor de los afectados por la invasión de
+                Rusia. La fiesta consistió en:
                 <dl>
                   <dt>Gran fiesta infantil</dt>
                   <dd>
-                    Para la diversión de los más pequeñosse se han preparado colchonetas hincables, talleres infantiles
-                    y actuaciones dirigidas a los niños.
+                    Para la diversión de los más pequeñosse se han preparado
+                    colchonetas hincables, talleres infantiles y actuaciones
+                    dirigidas a los niños.
                   </dd>
                   <dt>Mercadillo solidario</dt>
-                  <dd>Venta de merchandising del evento para la recaudación de fondos.</dd>
+                  <dd>
+                    Venta de merchandising del evento para la recaudación de
+                    fondos.
+                  </dd>
                   <dt>Barra solidaria</dt>
                   <dd>
-                    Venta de comida y bebida para el disfrute de todos. La comida incluye dulces, salados, paella,
-                    bollería y aperitivos.
+                    Venta de comida y bebida para el disfrute de todos. La
+                    comida incluye dulces, salados, paella, bollería y
+                    aperitivos.
                   </dd>
                   <dt>Actuaciones de:</dt>
                   <div style={{ marginLeft: "10px" }}>
@@ -85,9 +91,7 @@ const Entry = () => {
                   <img src="/images/blog/ucraniafest/IMG_0529.jpg" />
                 </Zoom>
               </div>
-              {/* <Pagination previous={directions["previous"]} next={directions["next"]}></Pagination>
-              <Pagination previous={directions["previous"]}> </Pagination> */}
-              <Pagination> </Pagination>
+              <Pagination {...directions} />
             </div>
           </div>
         </div>

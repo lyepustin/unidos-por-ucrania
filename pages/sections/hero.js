@@ -23,12 +23,8 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="hs-image">
-                <Image
-                  src={heroPic}
-                  alt="Picture of people loading a truck"
-                  placeholder="blur" // Optional blur-up while loading
-                />
+              <div className="hs-image flex">
+                <Image src={heroPic} alt="Picture of the author" placeholder="blur" objectFit="cover" />
               </div>
             </div>
           </div>
